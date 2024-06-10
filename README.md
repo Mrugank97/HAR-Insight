@@ -22,10 +22,8 @@ We will use the raw accelerometer data within the inertial_signals folder. The p
 
 4. **Decision Tree with Varying Depths:** Train Decision Trees with depths ranging from 2 to 8 and report accuracies and confusion matrices. Investigate changes in accuracy with increasing depth and provide insights into observed results.
 
-5. **PCA Visualization of Total Acceleration:** Apply Principal Component Analysis (PCA) to compress total acceleration time series data into two features. Visualize different activity classes using scatter plots. Additionally, utilize the TSFEL feature extraction library to extract relevant features and perform PCA to obtain two features. Compare the scatter plots to assess differences in visualization.
+5. **PCA Visualization of Total Acceleration:** Apply Principal Component Analysis (PCA) to compress total acceleration time series data into two features. Visualize different activity classes using scatter plots. Additionally, utilize the [TSFEL](https://tsfel.readthedocs.io/en/latest/) ([a featurizer library](https://github.com/fraunhoferportugal/tsfel)) to create features and to extract relevant features and perform PCA to obtain two features.
 
-6. **Decision Tree Classification with Extracted Features:** Use features obtained from TSFEL to train a Decision Tree classifier. Report accuracy and confusion matrix results using the test set. Compare the performance with using raw data and assess the effectiveness of featurization.
+6. **Decision Tree Classification with Extracted Features using TSFEL:** Use features obtained from `TSFEL` to train a Decision Tree classifier. Report accuracy and confusion matrix results using the test set. Compare the performance with using raw data and assess the effectiveness of featurization.
 
 7. **Comparison of Decision Tree Performance:** Compare Decision Tree performance with varying depths using raw data versus features extracted from TSFEL. Plot and analyze the accuracies obtained to determine the impact of featurization on classification performance.
-
-8. **Identification of Poor Model Performance:** Evaluate if there are any participants or activities where the model performs poorly. Provide insights into the possible reasons behind the observed performance issues.
